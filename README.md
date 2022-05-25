@@ -16,7 +16,7 @@
 
 ## Run
 
-```bash
+```jl
 @rurumimic ➜ /workspaces/julia (master ✗) $ julia
                _
    _       _ _(_)_     |  Documentation: https://docs.julialang.org
@@ -38,7 +38,7 @@ julia> ans
 
 [HelloWorld.jl](./src/HelloWorld/src/HelloWorld.jl)
 
-```bash
+```jl
 julia> include("./src/HelloWorld/src/HelloWorld.jl")
 Main.HelloWorld
 
@@ -51,7 +51,7 @@ julia> HelloWorld.greeting(hello)
 Hello, World!
 ```
 
-```bash
+```jl
 julia> @__MODULE__
 Main
 

@@ -10,13 +10,13 @@
 
 ### Activate a project
 
-```bash
+```jl
 julia> cd("src")
 ```
 
 Enter the Pkg REPL: `]`
 
-```bash
+```jl
 (@v1.7) pkg> generate HelloWorld
   Generating  project HelloWorld:
     HelloWorld/Project.toml
@@ -25,7 +25,7 @@ Enter the Pkg REPL: `]`
 
 Go back to the Julia REPL: `^C`
 
-```bash
+```jl
 julia> cd("HelloWorld")
 
 julia> pwd()
@@ -39,7 +39,7 @@ julia> readdir()
 
 Enter the Pkg REPL: `]`
 
-```bash
+```jl
 (@v1.7) pkg> activate . # activate src/HelloWorld
   Activating project at `…/src/HelloWorld`
 
@@ -52,7 +52,7 @@ Edit: [HelloWorld.jl](../src/HelloWorld/src/HelloWorld.jl)
 
 Go back to the Julia REPL: `^C`
 
-```bash
+```jl
 julia> using HelloWorld
 [ Info: Precompiling HelloWorld [2c597627-394a-4fca-89ca-eebf32025d85]
 
@@ -69,7 +69,7 @@ Hello, World!
 
 Enter the Pkg REPL: `]`
 
-```bash
+```jl
 (HelloWorld) pkg> add Random
     Updating registry at `~/.julia/registries/General.toml`
    Resolving package versions...
@@ -87,7 +87,7 @@ Add: [message.jl](../src/HelloWorld/src/message.jl)
 
 Go back to the Julia REPL: `^C`
 
-```bash
+```jl
 julia> include("src/message.jl")
 Main.message
 
@@ -102,7 +102,7 @@ julia> message.hi()
 
 or
 
-```bash
+```jl
 julia> include("src/message.jl")
 Main.message
 
