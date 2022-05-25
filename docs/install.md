@@ -5,7 +5,7 @@
 1. `Ctrl + Shift + P`
 2. `Codespaces: Add Development Container Configuration Files...`
 3. `julia(community)`
-4. [.devcontainer/devcontainer.json](.devcontainer/devcontainer.json)
+4. [.devcontainer/devcontainer.json](../.devcontainer/devcontainer.json)
 
 ### macOS
 

@@ -48,7 +48,7 @@ Enter the Pkg REPL: `]`
       Status `…/src/HelloWorld/Project.toml` (empty project)
 ```
 
-Edit: [`…/HelloWorld.jl`](../src/HelloWorld/src/HelloWorld.jl)
+Edit: [HelloWorld.jl](../src/HelloWorld/src/HelloWorld.jl)
 
 Go back to the Julia REPL: `^C`
 
