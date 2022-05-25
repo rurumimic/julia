@@ -1,34 +1,16 @@
 # Julia
 
 - [Julia.org](https://julialang.org/)
-- [Documentation](https://docs.julialang.org/)
-- [Downloads](https://julialang.org/downloads/)
+  - [Documentation](https://docs.julialang.org/)
+    - [Style guide](https://docs.julialang.org/en/v1/manual/style-guide/)
+  - [Downloads](https://julialang.org/downloads/)
+- [Pkg.jl](https://pkgdocs.julialang.org/)
 
-## Install
+---
 
-### GitHub Codespaces
+## Contents
 
-1. `Ctrl + Shift + P`
-2. `Codespaces: Add Development Container Configuration Files...`
-3. `julia(community)`
-4. [.devcontainer/devcontainer.json](.devcontainer/devcontainer.json)
-
-### macOS
-
-1. Download: `julia-1.7.2-mac64.dmg`
-2. drag the `Julia-1.7.app` to Applications Folder's Shortcut.
-3. Add Julia to PATH
-
-```bash
-# sudo mkdir -p /usr/local/bin
-# sudo rm -f /usr/local/bin/julia
-sudo ln -s /Applications/Julia-1.7.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia
-```
-
-#### Uninstall
-
-- `Julia.app`
-- `~/.julia`
+- [documentation](docs/README.md)
 
 ---
 
@@ -54,15 +36,32 @@ julia> ans
 
 ### Module
 
-[helloworld.jl](./src/helloworld/helloworld.jl)
+[HelloWorld.jl](./src/HelloWorld/src/HelloWorld.jl)
 
 ```bash
-julia> include("./src/helloworld/helloworld.jl")
+julia> include("./src/HelloWorld/src/HelloWorld.jl")
 Main.HelloWorld
 
 julia> using .HelloWorld
 
-julia> greeting(hello)
-Hello, world.
+julia> hello
+"Hello, World!"
 
+julia> HelloWorld.greeting(hello)
+Hello, World!
+```
+
+```bash
+julia> @__MODULE__
+Main
+
+julia> varinfo()
+  name                    size summary
+  –––––––––––––––– ––––––––––– ––––––––––––––––––
+  Base                         Module
+  Core                         Module
+  HelloWorld         3.083 KiB Module
+  InteractiveUtils 252.883 KiB Module
+  Main                         Module
+  ans                 21 bytes 13-codeunit String
 ```

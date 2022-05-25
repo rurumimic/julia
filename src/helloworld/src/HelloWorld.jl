@@ -1,11 +1,11 @@
 module HelloWorld
 
-export hello, greeting
+export hello
 
-hello = "Hello, world."
+hello = "Hello, World!"
 
 function greeting(x)
   println(x)
 end
 
-end
+end # of module
