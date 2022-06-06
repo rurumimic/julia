@@ -2,6 +2,7 @@
 
 - [Pkg.jl](https://pkgdocs.julialang.org/)
   - [Creating Packages](https://pkgdocs.julialang.org/v1/creating-packages/)
+  - [Building packages](https://pkgdocs.julialang.org/v1/managing-packages/#Building-packages)
 
 ### Basic
 
@@ -63,6 +64,15 @@ julia> HelloWorld.greeting(hello)
 Hello, World!
 ```
 
+### Decativate
+
+```bash
+(HelloWorld) pkg> activate
+  Activating project at `~/.julia/environments/v1.7`
+
+(@v1.7) pkg>
+```
+
 ---
 
 ### Add dependencies
@@ -113,4 +123,34 @@ julia> hi()
 
 julia> hi()
 "Hi, Alice"
+```
+
+---
+
+## Adding a build step
+
+- [Build Step](https://pkgdocs.julialang.org/v1/creating-packages/#Adding-a-build-step-to-the-package)
+
+### deps/build.jl
+
+```bash
+mkdir -p deps
+vi deps/build.jl
+```
+
+```jl
+print(read("deps/build.jl", String))
+```
+
+### Build a package
+
+```jl
+(HelloWorld) pkg> build HelloWorld
+    Building HelloWorld → `…/src/HelloWorld/deps/build.log`
+```
+
+```jl
+julia> print(read("deps/build.log", String))
+
+I am being built...
 ```

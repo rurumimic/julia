@@ -1,16 +1,22 @@
 # Julia
 
 - [Julia.org](https://julialang.org/)
+  - [Downloads](https://julialang.org/downloads/)
   - [Documentation](https://docs.julialang.org/)
     - [Style guide](https://docs.julialang.org/en/v1/manual/style-guide/)
-  - [Downloads](https://julialang.org/downloads/)
-- [Pkg.jl](https://pkgdocs.julialang.org/)
+  - [Discourse](https://discourse.julialang.org/)
+  - [Pkg.jl](https://pkgdocs.julialang.org/)
+- and:
+  - [Revise.jl](https://github.com/timholy/Revise.jl)
 
 ---
 
-## Contents
+## [documentation](docs/README.md)
 
-- [documentation](docs/README.md)
+- Install
+- Package and Module
+- Tools
+- Basic and Advance
 
 ---
 
